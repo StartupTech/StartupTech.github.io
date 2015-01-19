@@ -1,0 +1,12 @@
+
+https://startuptech.github.io/archive.html
+https://startuptech.github.io/atom.xml
+https://startuptech.github.io/categories.html
+https://startuptech.github.io/index.html
+https://startuptech.github.io/pages.html
+https://startuptech.github.io/rss.xml
+https://startuptech.github.io/sitemap.txt
+https://startuptech.github.io/tags.html
+
+https://startuptech.github.io/2015/01/19/hello-world
+https://startuptech.github.io/lessons/2011/12/29/jekyll-introduction
