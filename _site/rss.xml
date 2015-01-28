@@ -5,10 +5,93 @@
         <description>Startup Technology - Andrew Yang</description>
         <link>https://startuptech.github.io</link>
         <link>https://startuptech.github.io</link>
-        <lastBuildDate>2015-01-19T12:47:32+08:00</lastBuildDate>
-        <pubDate>2015-01-19T12:47:32+08:00</pubDate>
+        <lastBuildDate>2015-01-28T17:11:08+08:00</lastBuildDate>
+        <pubDate>2015-01-28T17:11:08+08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Setup Website For Free</title>
+                <description>
+&lt;h4 id=&quot;section&quot;&gt;[ 免费建站 ]&lt;/h4&gt;
+&lt;p&gt;如果你想建个个人网站，或者一个简单的公司网站，并且希望&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;搭建成本尽可能的低，&lt;/li&gt;
+  &lt;li&gt;后期维护成本为零，&lt;/li&gt;
+  &lt;li&gt;还要求能很方便的修改网站的内容，&lt;/li&gt;
+  &lt;li&gt;并且无容量和流量限制，&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这种天上掉馅饼的好事情，你觉得可能吗？&lt;/p&gt;
+
+&lt;p&gt;很高兴地告诉你，这等好事是可能的。今天就和大家分享一下怎样利用github免费建站技术。好吧，我吹牛逼了，域名不免费还是得你自己买的(&lt;strong&gt;&lt;em&gt;你也可以用github的子域名，免费&lt;/em&gt;&lt;/strong&gt;)，其它的部分免费。&lt;/p&gt;
+
+&lt;p&gt;注:本文不提供任何页面内容设计相关的话题，页面内容还是得你自己去做，你可以用现成的模板，也可以出钱请人设计一个牛逼哄哄的界面，这个随你！&lt;/p&gt;
+
+&lt;h4 id=&quot;section-1&quot;&gt;[下面是免费建站的流程:]&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;申请github账号&lt;/li&gt;
+  &lt;li&gt;建立一个特殊的和账号相关的项目&lt;/li&gt;
+  &lt;li&gt;用Jekyll-bootstrap模板快速建站&lt;/li&gt;
+  &lt;li&gt;通过github提交新的网页&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;section-2&quot;&gt;[具体步骤:]&lt;/h4&gt;
+&lt;p&gt;下面解释具体每一步该怎么做。&lt;/p&gt;
+
+&lt;h4 id=&quot;github&quot;&gt;[申请github账号]&lt;/h4&gt;
+&lt;p&gt;https://github.com, 免费申请，遇到问题请google。&lt;/p&gt;
+
+&lt;h4 id=&quot;section-3&quot;&gt;[建立一个特殊的和账号相关的项目]&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;申请好账号以后登录github,点击右上角个人头像旁边的加号，点击菜单中的第一项(New Repository)，进入新建项目页面。&lt;/li&gt;
+  &lt;li&gt;在新建项目页面，项目名栏目里面填入:&lt;你的名字&gt;.github.io, 如果你注册的账号叫datou, 那么你的项目名就应该填:datou.github.io,填其它的无效。填好后点击创建，项目创建成功。&lt;/你的名字&gt;&lt;/li&gt;
+  &lt;li&gt;项目创建成功以后你就可以提交index.html到主干分支上面去了（怎么上传请参见&lt;a href=&quot;#howToCommit&quot;&gt;这里&lt;/a&gt;“），然后在浏览器里面输入datou.github.io,就可以看到index.html里面的内容了。如果出现解析错误，可能需要等半个小时左右，让github生成页面内容。&lt;/li&gt;
+  &lt;li&gt;把你所有的静态页面一股脑上传到主分支上，所有页面就都可以正常显示啦！&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;到此为止，静态建站基本流程已经完毕。&lt;/p&gt;
+
+&lt;p&gt;你如果有自己的域名，你可以给自己的域名(比如fooldragon.com)添加一个CNAME指向datou.github.io(注意把datou替换成你自己的github账号名),然后在浏览器里面输入fooldragon.com, 你会发现你的域名已经有内容可以正常访问了。&lt;/p&gt;
+
+&lt;h4 id=&quot;jekyll-bootstrap&quot;&gt;[用Jekyll-bootstrap模板快速建站]&lt;/h4&gt;
+&lt;p&gt;上面讲了静态建站，生成的内容也是静态的，每次添加新的内容以后所有要引用新内容的地方都的手动添加引用。如果要做排序，置顶，过滤就更加麻烦了。&lt;/p&gt;
+
+&lt;p&gt;好在Github提供了对新款博客引擎Jekyll的支持，能让我们的网站具有半动态功能，这个功能也够我们在静态页面面前臭屁半天了。&lt;/p&gt;
+
+&lt;p&gt;Jekyll的安装和使用方法请自行上网搜，资料很多。&lt;/p&gt;
+
+&lt;p&gt;我在这里推荐大家用&lt;a href=&quot;http://jekyllbootstrap.com/&quot;&gt;Jekyll-bootstrap&lt;/a&gt;，这是一个Jekyll模板，大家可以在这基础上做修改来满足自己的需求。&lt;/p&gt;
+
+&lt;p&gt;使用方法:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;把Jekyll-bootstrap master下载下来，解压。然后把解压后的内容（不包含顶层文件夹）拷贝到你的主分支里面去&lt;/li&gt;
+  &lt;li&gt;在命令行，cd到主分支目录，输入命令: Jekyll serve&lt;/li&gt;
+  &lt;li&gt;在新命令行窗口里面输入: open http://127.0.0.1:4000/，你就可以看到你的网页了&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;github-1&quot;&gt;[通过github提交新的网页]&lt;/h4&gt;
+&lt;p&gt;&lt;a name=&quot;howToCommit&quot;&gt; &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;对git不熟悉的朋友，建议不要一上来就用命令行，先用UI工具，推荐&lt;a href=&quot;http://sourcetreeapp.com&quot;&gt;source tree&lt;/a&gt; , 免费，跨平台.&lt;/p&gt;
+
+&lt;p&gt;网站内容修改过程如下(git的具体使用请自行google):&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;用sourcetree把代码拉下来。&lt;/li&gt;
+  &lt;li&gt;修改/添加内容&lt;/li&gt;
+  &lt;li&gt;用sourcetree把改动提交到服务器。&lt;/li&gt;
+  &lt;li&gt;网页内容会自动刷新&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+                <link>https://startuptech.github.io/2015/01/19/setup-website-for-free</link>
+                <guid>https://startuptech.github.io/2015/01/19/setup-website-for-free</guid>
+                <pubDate>2015-01-19T00:00:00+08:00</pubDate>
+        </item>
 
         <item>
                 <title>Hello World</title>
